@@ -1,0 +1,20 @@
+{
+  "manifest_version" : 2,
+  "name" : "Florida Uncensorizer",
+  "description" : "Florida governor Rick Scott has not-so-secretly directed state agencies
+  to avoid using the words 'Climate Change' or 'Global Warming'. Activate this plugin to remind you about
+ the stuff Gov. Scott would prefer you forget about wherever the word 'Florida' appears on the web. ",
+  "version" : "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>" 
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "icons": { "16": "icon_016.png",
+             "48": "icon_048.png",
+            "128": "icon_128.png" }
+}
